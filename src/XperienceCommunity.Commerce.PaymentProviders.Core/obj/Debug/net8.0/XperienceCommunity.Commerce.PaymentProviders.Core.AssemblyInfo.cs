@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XperienceCommunity.Commerce.PaymentProviders.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+749d4831a9662f8b35d97c35cfd8bc3c6971a246")]
 [assembly: System.Reflection.AssemblyProductAttribute("XperienceCommunity.Commerce.PaymentProviders.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XperienceCommunity.Commerce.PaymentProviders.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

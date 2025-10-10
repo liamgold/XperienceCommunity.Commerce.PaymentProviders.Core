@@ -12,3 +12,4 @@ C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProvid
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\src\XperienceCommunity.Commerce.PaymentProviders.Core\obj\Debug\net8.0\XperienceCommunity.Commerce.PaymentProviders.Core.xml
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\src\XperienceCommunity.Commerce.PaymentProviders.Core\obj\Debug\net8.0\XperienceCommunity.Commerce.PaymentProviders.Core.pdb
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\src\XperienceCommunity.Commerce.PaymentProviders.Core\obj\Debug\net8.0\ref\XperienceCommunity.Commerce.PaymentProviders.Core.dll
+C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\src\XperienceCommunity.Commerce.PaymentProviders.Core\obj\Debug\net8.0\XperienceCommunity.Commerce.PaymentProviders.Core.sourcelink.json

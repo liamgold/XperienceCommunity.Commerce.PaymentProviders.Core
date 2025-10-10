@@ -1,9 +1,6 @@
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\CoverletSourceRootsMapping_Core.UnitTests
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\testhost.dll
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\testhost.exe
-C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\Core.UnitTests.deps.json
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\Core.UnitTests.runtimeconfig.json
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\Core.UnitTests.dll
@@ -20,7 +17,6 @@ C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProvid
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\Newtonsoft.Json.dll
-C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\NuGet.Frameworks.dll
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\xunit.assert.dll
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\xunit.core.dll
@@ -104,3 +100,6 @@ C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProvid
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\obj\Debug\net8.0\Core.UnitTests.pdb
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\obj\Debug\net8.0\Core.UnitTests.genruntimeconfig.cache
 C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\obj\Debug\net8.0\ref\Core.UnitTests.dll
+C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Core.UnitTests
+C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Projects\XperienceCommunityCommerce\XperienceCommunity.Commerce.PaymentProviders.Core\tests\Core.UnitTests\obj\Debug\net8.0\Core.UnitTests.sourcelink.json
