@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XperienceCommunity.Commerce.PaymentProviders.Core</name>
+    </assembly>
+    <members>
+        <member name="T:XperienceCommunity.Commerce.PaymentProviders.Core.IPaymentGateway">
+            <summary>
+            Defines operations for integrating with a payment gateway provider.
+            </summary>
+        </member>
+        <member name="M:XperienceCommunity.Commerce.PaymentProviders.Core.IPaymentGateway.CreateOrReuseSessionAsync(XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new checkout session or reuses an existing one for the given order.
+            </summary>
+            <param name="order">The order snapshot containing payment details.</param>
+            <param name="ct">Cancellation token.</param>
+            <returns>A result containing the redirect URL and provider reference.</returns>
+        </member>
+        <member name="M:XperienceCommunity.Commerce.PaymentProviders.Core.IPaymentGateway.HandleWebhookAsync(Microsoft.AspNetCore.Http.HttpRequest,System.Threading.CancellationToken)">
+            <summary>
+            Handles incoming webhook requests from the payment provider.
+            </summary>
+            <param name="request">The HTTP request containing webhook payload.</param>
+            <param name="ct">Cancellation token.</param>
+            <returns>A result indicating whether the webhook was handled and the related order number.</returns>
+        </member>
+        <member name="T:XperienceCommunity.Commerce.PaymentProviders.Core.IOrderPayments">
+            <summary>
+            Defines operations for persisting order payment state.
+            </summary>
+        </member>
+        <member name="M:XperienceCommunity.Commerce.PaymentProviders.Core.IOrderPayments.SetStateAsync(System.String,XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Updates the payment state for a given order.
+            </summary>
+            <param name="orderNumber">The unique order number.</param>
+            <param name="state">The new payment state.</param>
+            <param name="providerRef">Optional provider reference identifier.</param>
+            <param name="ct">Cancellation token.</param>
+        </member>
+        <member name="T:XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState">
+            <summary>
+            Represents the state of a payment transaction.
+            </summary>
+        </member>
+        <member name="F:XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState.Pending">
+            <summary>
+            Payment is awaiting processing.
+            </summary>
+        </member>
+        <member name="F:XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState.Processing">
+            <summary>
+            Payment is currently being processed.
+            </summary>
+        </member>
+        <member name="F:XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState.Succeeded">
+            <summary>
+            Payment has been successfully completed.
+            </summary>
+        </member>
+        <member name="F:XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState.Failed">
+            <summary>
+            Payment has failed.
+            </summary>
+        </member>
+        <member name="F:XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState.Refunded">
+            <summary>
+            Payment has been fully refunded.
+            </summary>
+        </member>
+        <member name="F:XperienceCommunity.Commerce.PaymentProviders.Core.PaymentState.PartiallyRefunded">
+            <summary>
+            Payment has been partially refunded.
+            </summary>
+        </member>
+        <member name="T:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot">
+            <summary>
+            Represents a snapshot of order details for payment processing.
+            </summary>
+            <param name="OrderNumber">The unique order number.</param>
+            <param name="AmountMinor">The payment amount in minor currency units (e.g., 1299 = £12.99).</param>
+            <param name="Currency">The three-letter ISO currency code.</param>
+            <param name="CustomerEmail">The customer's email address.</param>
+            <param name="SuccessUrl">The URL to redirect to upon successful payment.</param>
+            <param name="CancelUrl">The URL to redirect to upon payment cancellation.</param>
+        </member>
+        <member name="M:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot.#ctor(System.String,System.Int64,System.String,System.String,System.Uri,System.Uri)">
+            <summary>
+            Represents a snapshot of order details for payment processing.
+            </summary>
+            <param name="OrderNumber">The unique order number.</param>
+            <param name="AmountMinor">The payment amount in minor currency units (e.g., 1299 = £12.99).</param>
+            <param name="Currency">The three-letter ISO currency code.</param>
+            <param name="CustomerEmail">The customer's email address.</param>
+            <param name="SuccessUrl">The URL to redirect to upon successful payment.</param>
+            <param name="CancelUrl">The URL to redirect to upon payment cancellation.</param>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot.OrderNumber">
+            <summary>The unique order number.</summary>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot.AmountMinor">
+            <summary>The payment amount in minor currency units (e.g., 1299 = £12.99).</summary>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot.Currency">
+            <summary>The three-letter ISO currency code.</summary>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot.CustomerEmail">
+            <summary>The customer's email address.</summary>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot.SuccessUrl">
+            <summary>The URL to redirect to upon successful payment.</summary>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.OrderSnapshot.CancelUrl">
+            <summary>The URL to redirect to upon payment cancellation.</summary>
+        </member>
+        <member name="T:XperienceCommunity.Commerce.PaymentProviders.Core.CreateSessionResult">
+            <summary>
+            Represents the result of creating a payment session.
+            </summary>
+            <param name="RedirectUrl">The URL to redirect the customer to complete payment.</param>
+            <param name="ProviderRef">The provider's unique reference for this session.</param>
+        </member>
+        <member name="M:XperienceCommunity.Commerce.PaymentProviders.Core.CreateSessionResult.#ctor(System.Uri,System.String)">
+            <summary>
+            Represents the result of creating a payment session.
+            </summary>
+            <param name="RedirectUrl">The URL to redirect the customer to complete payment.</param>
+            <param name="ProviderRef">The provider's unique reference for this session.</param>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.CreateSessionResult.RedirectUrl">
+            <summary>The URL to redirect the customer to complete payment.</summary>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.CreateSessionResult.ProviderRef">
+            <summary>The provider's unique reference for this session.</summary>
+        </member>
+        <member name="T:XperienceCommunity.Commerce.PaymentProviders.Core.WebhookResult">
+            <summary>
+            Represents the result of processing a webhook request.
+            </summary>
+            <param name="Handled">Indicates whether the webhook was successfully handled.</param>
+            <param name="OrderNumber">The order number associated with the webhook, if any.</param>
+        </member>
+        <member name="M:XperienceCommunity.Commerce.PaymentProviders.Core.WebhookResult.#ctor(System.Boolean,System.String)">
+            <summary>
+            Represents the result of processing a webhook request.
+            </summary>
+            <param name="Handled">Indicates whether the webhook was successfully handled.</param>
+            <param name="OrderNumber">The order number associated with the webhook, if any.</param>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.WebhookResult.Handled">
+            <summary>Indicates whether the webhook was successfully handled.</summary>
+        </member>
+        <member name="P:XperienceCommunity.Commerce.PaymentProviders.Core.WebhookResult.OrderNumber">
+            <summary>The order number associated with the webhook, if any.</summary>
+        </member>
+    </members>
+</doc>
