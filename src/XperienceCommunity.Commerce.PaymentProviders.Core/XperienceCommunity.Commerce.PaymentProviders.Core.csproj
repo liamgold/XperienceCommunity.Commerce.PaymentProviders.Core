@@ -5,7 +5,25 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Package Metadata -->
+    <Title>Xperience Community Commerce Payment Providers - Core</Title>
+    <PackageId>XperienceCommunity.Commerce.PaymentProviders.Core</PackageId>
+    <Version>0.1.0-beta</Version>
+    <Authors>Liam Goldfinch</Authors>
+    <Company>Liam Goldfinch</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>kentico xperience commerce payment gateway stripe paypal checkout abstractions</PackageTags>
+    <Description>Core abstractions and contracts for building payment provider integrations in Xperience by Kentico commerce solutions. This package provides clean, provider-agnostic interfaces for integrating third-party payment gateways (Stripe, PayPal, Square, etc.) with Kentico Xperience.</Description>
+    <RepositoryUrl>https://github.com/liamgold/XperienceCommunity.Commerce.PaymentProviders.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
