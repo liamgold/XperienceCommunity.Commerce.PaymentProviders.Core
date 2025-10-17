@@ -284,12 +284,6 @@ public async Task<WebhookResult> HandleWebhookAsync(HttpRequest request, ...)
 }
 ```
 
-## Compatibility
-
-- **.NET:** 8.0+
-- **Xperience by Kentico:** 29.0.0+
-- **Dependencies:** `Microsoft.AspNetCore.Http.Abstractions` 2.3.0
-
 ## Contributing
 
 This is a community package. Contributions are welcome!
