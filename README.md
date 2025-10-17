@@ -160,7 +160,7 @@ public class MyPaymentGateway : IPaymentGateway
 }
 ```
 
-**See also:** [XperienceCommunity.Commerce.PaymentProviders.Stripe](../Stripe) for a complete implementation example.
+**See also:** [XperienceCommunity.Commerce.PaymentProviders.Stripe](https://github.com/liamgold/XperienceCommunity.Commerce.PaymentProviders.Stripe) for a complete implementation example.
 
 ### For Host Application Developers
 
@@ -198,7 +198,7 @@ public class OrderPaymentsService : IOrderPayments
 }
 ```
 
-**See also:** DancingGoat sample implementation in the [Stripe package samples](../Stripe/samples).
+**See also:** DancingGoat sample implementation in the [Stripe package repository](https://github.com/liamgold/XperienceCommunity.Commerce.PaymentProviders.Stripe).
 
 ## Architecture
 
