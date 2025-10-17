@@ -1,4 +1,4 @@
-# XperienceCommunity.Commerce.PaymentProviders.Core
+# Xperience Community: Commerce Payment Providers - Core
 
 [![NuGet](https://img.shields.io/nuget/v/XperienceCommunity.Commerce.PaymentProviders.Core.svg)](https://www.nuget.org/packages/XperienceCommunity.Commerce.PaymentProviders.Core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
