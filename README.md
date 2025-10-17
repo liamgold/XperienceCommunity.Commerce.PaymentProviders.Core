@@ -296,7 +296,7 @@ This is a community package. Contributions are welcome!
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Related Packages
 
